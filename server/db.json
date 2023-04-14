@@ -1,0 +1,956 @@
+{
+  "category": [
+    {
+      "custom_product_id": "custom-perfume",
+      "category_name": "Custom Perfume",
+      "category_image": {
+        "category_image_small": "https://res.cloudinary.com/dkppw65bv/image/upload/w_100,h_100/v1681367352/Perfume_xe5qhi.png",
+        "category_image_large": "https://res.cloudinary.com/dkppw65bv/image/upload/w_300,h_300/v1681367352/Perfume_xe5qhi.png"
+      },
+      "classification": "Cosmetics",
+      "variety_name": "Base",
+      "variety": [
+        {
+          "variety_id": "custom-perfume-oil-base",
+          "variety_value": "Oil-based"
+        },
+        { "variety_id": "custom-perfume-floral", "variety_value": "Floral" }
+      ]
+    },
+    {
+      "custom_product_id": "custom-body-lotion",
+      "category_name": "Custom Body Lotion",
+      "category_image": {
+        "category_image_small": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:eco,w_100/v1681367352/Lotion_cfxias.png",
+        "category_image_large": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:best,w_300/v1681367352/Lotion_cfxias.png"
+      },
+      "classification": "Skin Care",
+      "variety_name": "Cap",
+      "variety": [
+        {
+          "variety_id": "custom-body-lotion-flip-top",
+          "variety_value": "Flip Top"
+        },
+        { "variety_id": "custom-body-lotion-pump", "variety_value": "Pump" }
+      ]
+    },
+    {
+      "custom_product_id": "custom-body-scrub",
+      "category_name": "Custom Body Scrub",
+      "category_image": {
+        "category_image_small": "https://res.cloudinary.com/dkppw65bv/image/upload/w_100,h_100/v1681367352/Perfume_xe5qhi.png",
+        "category_image_large": "https://res.cloudinary.com/dkppw65bv/image/upload/w_300,h_300/v1681367352/Perfume_xe5qhi.png"
+      },
+      "classification": "Skin Care",
+      "variety_name": "Size",
+      "variety": [
+        {
+          "variety_id": "custom-body-scrub-4-oz",
+          "variety_value": "4 oz"
+        },
+        { "variety_id": "custom-body-scrub-8-oz", "variety_value": "8 oz" }
+      ]
+    },
+    {
+      "custom_product_id": "custom-liquid-bath-soap",
+      "category_name": "Custom Liquid Bath Soap",
+      "category_image": {
+        "category_image_small": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:eco,w_100/v1681296244/Shampoo_d9tp7w.png",
+        "category_image_large": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:best,w_300/v1681296244/Shampoo_d9tp7w.png"
+      },
+      "classification": "Hygiene",
+      "variety_name": "Liquid bath soap types",
+      "variety": [
+        {
+          "variety_id": "custom-liquid-bath-soap-moisturizing",
+          "variety_value": "Moisturizing"
+        },
+        {
+          "variety_id": "custom-liquid-bath-soap-antibacterial",
+          "variety_value": "Antibacterial"
+        },
+        {
+          "variety_id": "custom-liquid-bath-soap-body-wash",
+          "variety_value": "Body Wash"
+        }
+      ]
+    },
+    {
+      "custom_product_id": "custom-facial-cleanser",
+      "category_name": "Custom Facial Cleanser",
+      "category_image": {
+        "category_image_small": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:eco,w_100/v1681296244/Facial-wash_k5ekrs.png",
+        "category_image_large": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,q_auto:best,w_300/v1681296244/Facial-wash_k5ekrs.png"
+      },
+      "classification": "Skin Care",
+      "variety_name": "Facial Cleanser Types",
+      "variety": [
+        {
+          "variety_id": "custom-facial-cleanser-oil-base",
+          "variety_value": "Oil Base"
+        },
+        {
+          "variety_id": "custom-facial-cleanser-micellar",
+          "variety_value": "Micellar"
+        },
+        {
+          "variety_id": "custom-facial-cleanser-foam",
+          "variety_value": "Foam"
+        }
+      ]
+    }
+  ],
+
+  "ingredients": [
+    {
+      "ingredient_row_id": "custom-perfume-oil-base",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Carrier Oils",
+          "options": [
+            {
+              "option_id": "jojoba",
+              "option_name": "Jojoba",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "sweet-almond",
+              "option_name": "Sweet Almond",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "coconut",
+              "option_name": "Coconut",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "grape-seed",
+              "option_name": "Grape-seed",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "apricot",
+              "option_name": "Apricot",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            },
+            {
+              "option_id": "avocado",
+              "option_name": "Avocado",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/avocado_b4wtsa.png"
+            },
+            {
+              "option_id": "olive-oil",
+              "option_name": "Olive oil",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/olive_eko8n8.png"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Essential Oils",
+          "options": [
+            {
+              "option_id": "lavender",
+              "option_name": "Lavender",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/w_50,h_50/v1681368478/bottle-of-lavender-essential-oil-with-fresh-royalty-free-image-920637186-1547242978_s1l0jr.jpg"
+            },
+            {
+              "option_id": "frankincense",
+              "option_name": "Frankincense",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "bergamot",
+              "option_name": "Bergamot",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/Bergamot_ibgkr3.jpg"
+            },
+            {
+              "option_id": "sandal-wood",
+              "option_name": "Sandal-wood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,w_50,x_372/v1681368950/Sandal-wood_swvcge.jpg"
+            },
+            {
+              "option_id": "vanilla",
+              "option_name": "Vanilla",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/vanilla_gro7bm.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Fixatives",
+          "options": [
+            {
+              "option_id": "benzoine",
+              "option_name": "Benzoine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,h_50,w_50/v1681370048/benzoine_mj3gbn.jpg"
+            },
+            {
+              "option_id": "frankincense",
+              "option_name": "Frankincense",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "myrrh",
+              "option_name": "Myrrh",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/myrrh-oil-500x500_pgj51u.webp"
+            },
+            {
+              "option_id": "labdanum",
+              "option_name": "Labdanum",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/labdanum_lwxjit.jpg"
+            },
+            {
+              "option_id": "tonka",
+              "option_name": "Tonka",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/tonka_hy44gg.jpg"
+            },
+            {
+              "option_id": "amber",
+              "option_name": "Amber",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/amber_my4hfb.webp"
+            },
+            {
+              "option_id": "musk",
+              "option_name": "Musk",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681370048/musk_jee7vg.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-perfume-floral",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Essential Oils",
+          "options": [
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "lily",
+              "option_name": "Lily",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "iris",
+              "option_name": "Iris",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "ylang-ylang",
+              "option_name": "Ylang-ylang",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Citrus Oils",
+          "options": [
+            {
+              "option_id": "bergamot",
+              "option_name": "Bergamot",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/Bergamot_ibgkr3.jpg"
+            },
+            {
+              "option_id": "lemon",
+              "option_name": "Lemon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374118/lemon_z6y09h.webp"
+            },
+            {
+              "option_id": "orange",
+              "option_name": "Orange",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374118/orange_pxrw2o.webp"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Woods and Musks",
+          "options": [
+            {
+              "option_id": "sandalwood",
+              "option_name": "Sandalwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,q_auto:eco,w_50,x_397/v1681368950/Sandal-wood_swvcge.jpg"
+            },
+            {
+              "option_id": "cedarwood",
+              "option_name": "cedarwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681375358/cedarwood_jykex6.webp"
+            },
+            {
+              "option_id": "musk",
+              "option_name": "Musk",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681375357/musk_ano9p3.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Spices",
+          "options": [
+            {
+              "option_id": "cinnamon",
+              "option_name": "Cinnamon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,q_auto:good,w_50,x_77/v1681374987/cinnamon_q9erjr.webp"
+            },
+            {
+              "option_id": "clove",
+              "option_name": "clove",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374987/clove_tiwnrs.jpg"
+            },
+            {
+              "option_id": "cardamom",
+              "option_name": "Cardamon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374987/cardamom_i5j054.webp"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Synthetic ingredients",
+          "options": [
+            {
+              "option_id": "aldehydes",
+              "option_name": "Aldehydes",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,h_50,w_50/v1681370048/benzoine_mj3gbn.jpg"
+            },
+            {
+              "option_id": "ionones",
+              "option_name": "Ionones",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "hedione",
+              "option_name": "Hedione",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/myrrh-oil-500x500_pgj51u.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-body-lotion-flip-top",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "1st Scent",
+          "options": [
+            {
+              "option_id": "apple-jack",
+              "option_name": "Apple Jack",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "barber-shop",
+              "option_name": "Barber Shop",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "bay-rum",
+              "option_name": "Bay Rum",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "beach",
+              "option_name": "Beach",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "black-tie",
+              "option_name": "Black Tie",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "2nd Scent",
+          "options": [
+            {
+              "option_id": "apple-jack",
+              "option_name": "Apple Jack",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "barber-shop",
+              "option_name": "Barber Shop",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "bay-rum",
+              "option_name": "Bay Rum",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "beach",
+              "option_name": "Beach",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "black-tie",
+              "option_name": "Black Tie",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "3rd Scent",
+          "options": [
+            {
+              "option_id": "apple-jack",
+              "option_name": "Apple Jack",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "barber-shop",
+              "option_name": "Barber Shop",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "bay-rum",
+              "option_name": "Bay Rum",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "beach",
+              "option_name": "Beach",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "black-tie",
+              "option_name": "Black Tie",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-body-lotion-pump",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Essential Oils",
+          "options": [
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "lily",
+              "option_name": "Lily",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "iris",
+              "option_name": "Iris",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "ylang-ylang",
+              "option_name": "Ylang-ylang",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Citrus Oils",
+          "options": [
+            {
+              "option_id": "bergamot",
+              "option_name": "Bergamot",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/Bergamot_ibgkr3.jpg"
+            },
+            {
+              "option_id": "lemon",
+              "option_name": "Lemon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374118/lemon_z6y09h.webp"
+            },
+            {
+              "option_id": "orange",
+              "option_name": "Orange",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374118/orange_pxrw2o.webp"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Woods and Musks",
+          "options": [
+            {
+              "option_id": "sandalwood",
+              "option_name": "Sandalwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,q_auto:eco,w_50,x_397/v1681368950/Sandal-wood_swvcge.jpg"
+            },
+            {
+              "option_id": "cedarwood",
+              "option_name": "cedarwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681375358/cedarwood_jykex6.webp"
+            },
+            {
+              "option_id": "musk",
+              "option_name": "Musk",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681375357/musk_ano9p3.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Spices",
+          "options": [
+            {
+              "option_id": "cinnamon",
+              "option_name": "Cinnamon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,q_auto:good,w_50,x_77/v1681374987/cinnamon_q9erjr.webp"
+            },
+            {
+              "option_id": "clove",
+              "option_name": "clove",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374987/clove_tiwnrs.jpg"
+            },
+            {
+              "option_id": "cardamom",
+              "option_name": "Cardamon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681374987/cardamom_i5j054.webp"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "Synthetic ingredients",
+          "options": [
+            {
+              "option_id": "aldehydes",
+              "option_name": "Aldehydes",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,h_50,w_50/v1681370048/benzoine_mj3gbn.jpg"
+            },
+            {
+              "option_id": "ionones",
+              "option_name": "Ionones",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "hedione",
+              "option_name": "Hedione",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/myrrh-oil-500x500_pgj51u.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-body-scrub-4-oz",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "1st Scents",
+          "options": [
+            {
+              "option_id": "fir-forest",
+              "option_name": "Fir forest",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "fresh-bamboo",
+              "option_name": "Fresh bamboo",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "gardenia",
+              "option_name": "Gardenia",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "gogi-berry",
+              "option_name": "Gogi Berry",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "harvest-moon",
+              "option_name": "Harvest Moon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "2nd Scents",
+          "options": [
+            {
+              "option_id": "fresh-flora",
+              "option_name": "Fresh Flora",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/w_50,h_50/v1681368478/bottle-of-lavender-essential-oil-with-fresh-royalty-free-image-920637186-1547242978_s1l0jr.jpg"
+            },
+            {
+              "option_id": "herbal-honey",
+              "option_name": "Herbal Honey",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "leather",
+              "option_name": "Leather",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/Bergamot_ibgkr3.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "3rd Scents",
+          "options": [
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,h_50,w_50/v1681370048/benzoine_mj3gbn.jpg"
+            },
+            {
+              "option_id": "sandalwood",
+              "option_name": "Sandalwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "spicy-pumpkin",
+              "option_name": "Spicy Pumpkin",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/myrrh-oil-500x500_pgj51u.webp"
+            },
+            {
+              "option_id": "vanilla",
+              "option_name": "Vanilla",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/labdanum_lwxjit.jpg"
+            },
+            {
+              "option_id": "sugar-cookie",
+              "option_name": "Sugar Cookie",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/tonka_hy44gg.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-body-scrub-8-oz",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "1st Scents",
+          "options": [
+            {
+              "option_id": "fir-forest",
+              "option_name": "Fir forest",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "fresh-bamboo",
+              "option_name": "Fresh bamboo",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "gardenia",
+              "option_name": "Gardenia",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "gogi-berry",
+              "option_name": "Gogi Berry",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "harvest-moon",
+              "option_name": "Harvest Moon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "2nd Scents",
+          "options": [
+            {
+              "option_id": "fresh-flora",
+              "option_name": "Fresh Flora",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/w_50,h_50/v1681368478/bottle-of-lavender-essential-oil-with-fresh-royalty-free-image-920637186-1547242978_s1l0jr.jpg"
+            },
+            {
+              "option_id": "herbal-honey",
+              "option_name": "Herbal Honey",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "jasmine",
+              "option_name": "Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "leather",
+              "option_name": "Leather",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/Bergamot_ibgkr3.jpg"
+            }
+          ]
+        },
+        {
+          "ingredient_row_name": "3rd Scents",
+          "options": [
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_scale,h_50,w_50/v1681370048/benzoine_mj3gbn.jpg"
+            },
+            {
+              "option_id": "sandalwood",
+              "option_name": "Sandalwood",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/frankensin_a3ydlg.jpg"
+            },
+            {
+              "option_id": "spicy-pumpkin",
+              "option_name": "Spicy Pumpkin",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/myrrh-oil-500x500_pgj51u.webp"
+            },
+            {
+              "option_id": "vanilla",
+              "option_name": "Vanilla",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/labdanum_lwxjit.jpg"
+            },
+            {
+              "option_id": "sugar-cookie",
+              "option_name": "Sugar Cookie",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681369957/tonka_hy44gg.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-liquid-bath-soap-moisturizing",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Moisturizing",
+          "options": [
+            {
+              "option_id": "aloe_vera",
+              "option_name": "Aloe Vera",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "cocoa_butter",
+              "option_name": "Cocoa Butter",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "shea_butter",
+              "option_name": "Shea Butter",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "almond",
+              "option_name": "Almond",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "coconut_milk",
+              "option_name": "Coconut Milk",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-liquid-bath-soap-antibacterial",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Antibacterial",
+          "options": [
+            {
+              "option_id": "pomegranate",
+              "option_name": "Pomegranate",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "vanilla",
+              "option_name": "Vanilla",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "lavender",
+              "option_name": "Lavender",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "green_apple",
+              "option_name": "Green Apple",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "lemon",
+              "option_name": "Lemon",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-liquid-bath-soap-body-wash",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Body Wash",
+          "options": [
+            {
+              "option_id": "marula_oil",
+              "option_name": "Marula Oil",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "coconut_oil",
+              "option_name": "Coconut Oil",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "lavender_and_jasmine",
+              "option_name": "Lavender and Jasmine",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "himalayan_salt",
+              "option_name": "Himalayan Salt",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "dragonfruit",
+              "option_name": "Dragonfruit",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-facial-cleanser-oil-base",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Oil-based",
+          "options": [
+            {
+              "option_id": "ginger_and_pineapple",
+              "option_name": "Ginger and Pineapple",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/jojoba_ttj4ak.png"
+            },
+            {
+              "option_id": "tea_tree_and_lemongrass",
+              "option_name": "Tea Tree and Lemongrass",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/sweet-almond_nqdz2o.png"
+            },
+            {
+              "option_id": "olive_oil",
+              "option_name": "Olive Oil",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
+            },
+            {
+              "option_id": "rose",
+              "option_name": "Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
+            },
+            {
+              "option_id": "citrus_medley",
+              "option_name": "Citrus Medley",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/apricot_rc1e7f.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-facial-cleanser-micellar",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Micellar",
+          "options": [
+            {
+              "option_id": "charcoal",
+              "option_name": "Charcoal",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "aloe_vera",
+              "option_name": "Aloe Vera",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "hokkaido_rose",
+              "option_name": "Hokkaido Rose",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "pearl",
+              "option_name": "Pearl",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "algae",
+              "option_name": "Algae",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient_row_id": "custom-facial-cleanser-foam",
+      "ingredient_row_items": [
+        {
+          "ingredient_row_name": "Foam",
+          "options": [
+            {
+              "option_id": "banana",
+              "option_name": "Banana",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681368950/rose_g31kus.jpg"
+            },
+            {
+              "option_id": "mango",
+              "option_name": "Mango",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_60,q_auto:eco,w_50/v1681368950/jasmine_kk6wle.jpg"
+            },
+            {
+              "option_id": "argan",
+              "option_name": "Argan",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/lily_cgp7ex.webp"
+            },
+            {
+              "option_id": "peach",
+              "option_name": "Peach",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373776/iris_cplsbc.jpg"
+            },
+            {
+              "option_id": "shea_butter",
+              "option_name": "Shea Butter",
+              "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,q_auto:eco,w_50/v1681373615/ylang-ylang_rlwb0o.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
