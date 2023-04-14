@@ -14,7 +14,6 @@ import DrawerMobile from "./DrawerMobile";
 import AccountMenu from "./AccountMenu";
 import ProductOptions from "./ProductOptions";
 
-
 const ActiveLink = ({ href, styleMode, children }) => {
   const router = useRouter();
 
@@ -55,7 +54,13 @@ const MainNavigation = (props) => {
     "&:hover": { backgroundColor: "transparent" },
   };
   return (
-    <div className={classes.container}>
+    <div
+      className={`${
+        props.backgroundSColorAcc === "transparent"
+          ? classes.container
+          : classes["container-login"]
+      }`}
+    >
       <nav
         className={`${
           props.styleMode === "light"

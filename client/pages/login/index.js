@@ -1,5 +1,4 @@
-import LogIn from "@/components/account/LogIn";
-import { IUser } from "@/interface/IUser";
+import LogIn from "../../components/account/LogIn";
 
 const LogInPage = (props) => {
   console.log(props);

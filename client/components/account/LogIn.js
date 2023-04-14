@@ -11,8 +11,8 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
-import facebookIcon from "../../assets/icons/facebook-icon.png";
-import googleIcon from "../../assets/icons/google-icon.png";
+import facebookIcon from "../../public/assets/icons/facebook-icon.png";
+import googleIcon from "../../public/assets/icons/google-icon.png";
 import classes from "../../styles/account/LogIn.module.css";
 
 const Login = () => {

@@ -5,9 +5,17 @@ import { Fragment, ReactNode } from "react";
 
 const Layout = ({ children }) => {
   const { pathname } = useRouter();
+  console.log(pathname);
   return (
     <Fragment>
-      <MainNavigation styleMode={pathname === "/" ? "light" : "dark"} />
+      <MainNavigation
+        styleMode={pathname === "/" ? "light" : "dark"}
+        backgroundSColorAcc={
+          pathname === "/login" || pathname === "/signup"
+            ? "background-white"
+            : "transparent"
+        }
+      />
       {children}
       <Footer />
     </Fragment>

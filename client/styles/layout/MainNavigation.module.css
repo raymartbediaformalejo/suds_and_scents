@@ -8,11 +8,15 @@
   z-index: 999;
   background-color: transparent;
 }
+.container-login {
+  background-color: #fff;
+}
+
 .nav-container,
 .nav-container-dark-text {
   position: relative;
-  /* z-index: 1; */
-  max-width: 1324px;
+  width: 94%;
+  max-width: 1424px;
   margin: 0 auto;
   padding: 0.6rem auto;
   overflow: hidden;
