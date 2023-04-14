@@ -21,14 +21,6 @@ import Stack from "@mui/material/Stack";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import Divider from "@mui/material/Divider";
 
-import image1 from "../../public/assets/images/editor/jojoba.png";
-import image2 from "../../public/assets/images/editor/sweet-almond.png";
-import image3 from "../../public/assets/images/editor/coconut.png";
-import image4 from "../../public/assets/images/editor/grape-seed.png";
-import image5 from "../../public/assets/images/editor/apricot.png";
-import image6 from "../../public/assets/images/editor/avocado.png";
-import image7 from "../../public/assets/images/editor/olive.png";
-
 import outputImageBg from "../../public/assets/outputImage_background.png";
 
 const CreateFormula = ({ categoryData, ingredientData }) => {
@@ -42,7 +34,6 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
 
   const customProductName = categoryData.category_name;
   const classification = categoryData.classification;
-  // console.log(customProductData);
   const categoryImage = categoryData.category_image.category_image_large;
   const ingre = ingredientData.find(
     (ingre) => ingre.ingredient_row_id === variety
@@ -52,16 +43,13 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
     setQuantity((prev) => prev + 1);
   };
 
-  console.log(categoryData);
-  console.log(ingredientData);
-
   const decrementQuantityHandler = () => {
     if (quantity > 1) {
       setQuantity((prev) => prev - 1);
     }
   };
 
-  const addIngredientHandler = (id) => () => {
+  const addIngredientHandler = (id, value) => () => {
     setIngredients((prev) => {
       const index = prev.findIndex((i) => i.ingredient.id === id);
       if (index !== -1) {
@@ -82,12 +70,13 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
         return [
           ...prev,
           {
-            ingredient: { id, name: "asdf", isSelected: true },
+            ingredient: { id, name: value, isSelected: true },
           },
         ];
       }
     });
   };
+  console.log(ingredients);
 
   const baseHandler = (e) => {
     setBase(e.target.value);
@@ -109,8 +98,6 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
   const varietyChangeHandler = (value) => () => {
     setVariety(value);
   };
-  console.log(variety);
-  console.log(ingre);
 
   // console.log(ingredientData.find((ingre = variety === ingre)));
 
@@ -173,7 +160,6 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
         <div className={classes["ingredient-optoins-wrapper"]}>
           {ingre &&
             ingre.ingredient_row_items.map((ingredient) => {
-              console.log(ingredient);
               return (
                 <div className={classes["oils-wrapper"]}>
                   <h4 className={classes["oil-title"]}>
@@ -182,11 +168,13 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
                   </h4>
                   <div className={classes["oils-wrapper__options"]}>
                     {ingredient.options.map((option) => {
-                      console.log(option);
                       return (
                         <div
                           className={classes["oil-option"]}
-                          onClick={addIngredientHandler("jojooil1")}
+                          onClick={addIngredientHandler(
+                            option.option_id,
+                            option.option_name
+                          )}
                         >
                           <div
                             className={`${classes["image-button"]} ${
@@ -213,245 +201,6 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
                 </div>
               );
             })}
-          {/* <div className={classes["oils-wrapper"]}>
-            <h4 className={classes["oil-title"]}>
-              Essential Oils
-              <span className={classes["oil__required"]}>*</span>
-            </h4>
-            <div className={classes["oils-wrapper__options"]}>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB1")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil1")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image1} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Jojoba</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB2")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil2")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image2} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Sweet Almond</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB3")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil3")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image3} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Coconut</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB4")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil4")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image4} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Grape-seed</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB5")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil5")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image5} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Apricot</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB6")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil6")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image6} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Avocado</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilB7")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil7")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image7} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Olive</p>
-              </div>
-            </div>
-          </div>
-          <div className={classes["oils-wrapper"]}>
-            <h4 className={classes["oil-title"]}>
-              Carrier Oils<span className={classes["oil__required"]}>*</span>
-            </h4>
-            <div className={classes["oils-wrapper__options"]}>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC1")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil1")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image1} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Jojoba</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC2")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil2")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image2} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Sweet Almond</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC3")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil3")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image3} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Coconut</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC4")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil4")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image4} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Grape-seed</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC5")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil5")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image5} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Apricot</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooilC6")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil6")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image6} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Avocado</p>
-              </div>
-              <div
-                className={classes["oil-option"]}
-                onClick={addIngredientHandler("jojooil7")}
-              >
-                <div
-                  className={`${classes["image-button"]} ${
-                    ingredients.find((i) => i.ingredient.id === "jojooil7")
-                      ?.ingredient.isSelected && classes.selected
-                  }`}
-                >
-                  <div>
-                    <Image src={image7} alt="perfume" loading="lazy" />
-                  </div>
-                </div>
-                <p>Olive</p>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
 
