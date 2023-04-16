@@ -1,7 +1,9 @@
 import "../styles/globals.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Layout from "../templates/Layout";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { SessionProvider } from "next-auth/react";
+
+import Layout from "../templates/Layout";
 
 const queryClient = new QueryClient();
 
@@ -16,14 +18,20 @@ const theme = createTheme({
   },
 });
 
-export default function App({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  console.log(session);
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <SessionProvider session={session}>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </SessionProvider>
   );
 }

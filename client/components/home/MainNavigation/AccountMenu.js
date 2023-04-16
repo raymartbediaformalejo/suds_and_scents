@@ -1,25 +1,23 @@
 // import * as React from "react";
-import { ReactNode, Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
-import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import { Button } from "@mui/material";
 
 import classes from "../../../styles/layout/AccountMenu.module.css";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 
-
-const AccountMenu = (props) => {
+const AccountMenu = ({ styleMode, userSession }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  if (userSession) {
+    console.log(userSession?.data?.user.image);
+  }
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -33,24 +31,35 @@ const AccountMenu = (props) => {
           <IconButton
             onClick={handleClick}
             size="small"
-            // sx={{ ml: 1 }}
             aria-controls={open ? "account-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar
               sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
-            >
-              <PersonRoundedIcon
-                classes={{
-                  root: `${
-                    props.styleMode === "light"
-                      ? classes.iconButton
-                      : classes.iconButtonDark
-                  }`,
-                }}
+              src={userSession?.data?.user.image}
+            />
+            {/* {userSession && userSession.status === "authenticated" ? (
+              <Avatar
+                sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
+                src={userSession?.data?.user.image}
               />
-            </Avatar>
+            ) : (
+              
+              <Avatar
+                sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
+              >
+                <PersonRoundedIcon
+                  classes={{
+                    root: `${
+                      styleMode === "light"
+                        ? classes.iconButton
+                        : classes.iconButtonDark
+                    }`,
+                  }}
+                />
+              </Avatar>
+            )} */}
           </IconButton>
         </Tooltip>
       </Box>
@@ -90,16 +99,26 @@ const AccountMenu = (props) => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <Link href="/signup">
-          <MenuItem onClick={handleClose}>
-            <Avatar /> Sign Up
-          </MenuItem>
-        </Link>
-        <Link href="/login">
-          <MenuItem onClick={handleClose}>
-            <Avatar /> Log In
-          </MenuItem>
-        </Link>
+        {userSession?.status !== "authenticated" ? (
+          <div>
+            <Link href="/signup">
+              <MenuItem onClick={handleClose}>
+                <Avatar /> Sign Up
+              </MenuItem>
+            </Link>
+            <Link href="/login">
+              <MenuItem onClick={handleClose}>
+                <Avatar /> Log In
+              </MenuItem>
+            </Link>
+          </div>
+        ) : (
+          <Button onClick={() => signOut()}>
+            <MenuItem onClick={handleClose}>
+              <Avatar /> Logout
+            </MenuItem>
+          </Button>
+        )}
         {/* <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon>

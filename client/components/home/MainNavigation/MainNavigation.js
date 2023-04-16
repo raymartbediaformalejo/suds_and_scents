@@ -1,5 +1,5 @@
 // import { makeStyles } from "@mui/styles";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -16,6 +16,8 @@ import ProductOptions from "./ProductOptions";
 
 const ActiveLink = ({ href, styleMode, children }) => {
   const router = useRouter();
+
+  // console.log(userSessionData);
 
   let className = "";
   if (router.pathname === href) {
@@ -41,6 +43,10 @@ const ActiveLink = ({ href, styleMode, children }) => {
 };
 
 const MainNavigation = (props) => {
+  console.log(props.userSession);
+  // if (session) {
+  //   console.log(session);
+  // }
   const style = {
     color: `${
       props.styleMode === "light"
@@ -158,7 +164,10 @@ const MainNavigation = (props) => {
                 <ShoppingCartRoundedIcon />
               </Badge>
             </IconButton>
-            <AccountMenu styleMode={props.styleMode} />
+            <AccountMenu
+              styleMode={props.styleMode}
+              userSession={props.userSession}
+            />
           </div>
         </div>
       </nav>

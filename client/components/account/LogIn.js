@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { signIn } from "next-auth/react";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,6 +18,7 @@ import googleIcon from "../../public/assets/icons/google-icon.png";
 import classes from "../../styles/account/LogIn.module.css";
 
 const Login = () => {
+  // const session = useSession();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,7 +29,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Email:", email, "Password:", password);
+    // console.log("Email:", email, "Password:", password);
   };
 
   return (
@@ -72,6 +75,7 @@ const Login = () => {
                 <p>Log in with phone number?</p>
                 <p>Forgot your password?</p>
               </div>
+
               <Button
                 variant="contained"
                 className={classes.button}
@@ -111,6 +115,7 @@ const Login = () => {
               </Button>
               <Button
                 className={classes["google-button"]}
+                onClick={() => signIn("google", { callbackUrl: "/" })}
                 sx={{
                   border: "1px solid hsl(0, 0%, 80%)",
                   color: "#545454",
