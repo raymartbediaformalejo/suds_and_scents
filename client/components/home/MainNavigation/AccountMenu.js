@@ -24,6 +24,13 @@ const AccountMenu = ({ styleMode, userSession }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const signOutHandler = async (e) => {
+    e.preventDefault();
+    // setAnchorEl(null);
+    await signOut();
+  };
+
   return (
     <Fragment>
       <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
@@ -120,31 +127,10 @@ const AccountMenu = ({ styleMode, userSession }) => {
             </Link>
           </div>
         ) : (
-          <Button onClick={() => signOut()}>
-            <MenuItem onClick={handleClose}>
-              <Avatar /> Logout
-            </MenuItem>
-          </Button>
+          <MenuItem onClick={signOutHandler}>
+            <Avatar /> Logout
+          </MenuItem>
         )}
-        {/* <Divider />
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <PersonAdd fontSize="small" />
-          </ListItemIcon>
-          Add another account
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <Settings fontSize="small" />
-          </ListItemIcon>
-          Settings
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <Logout fontSize="small" />
-          </ListItemIcon>
-          Logout
-        </MenuItem> */}
       </Menu>
     </Fragment>
   );
