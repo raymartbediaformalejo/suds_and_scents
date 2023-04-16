@@ -36,6 +36,13 @@ const AccountMenu = ({ styleMode, userSession }) => {
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar
+              classes={{
+                root: `${
+                  styleMode === "light"
+                    ? classes.iconButton
+                    : classes.iconButtonDark
+                }`,
+              }}
               sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
               src={userSession?.data?.user.image}
             />

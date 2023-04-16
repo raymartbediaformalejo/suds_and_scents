@@ -1,4 +1,4 @@
-import { Fragment, MouseEventHandler, ReactNode } from "react";
+import { Fragment, MouseEventHandler, ReactNode, useEffect } from "react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -31,13 +31,21 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
   const [loading, setLoading] = useState(false);
   const [showCreateFormulaButton, setShowCreateFormulaButton] = useState(true);
   const [variety, setVariety] = useState("");
+  const [ingre, setIngre] = useState("");
 
   const customProductName = categoryData.category_name;
   const classification = categoryData.classification;
   const categoryImage = categoryData.category_image.category_image_large;
-  const ingre = ingredientData.find(
-    (ingre) => ingre.ingredient_row_id === variety
-  );
+  // const ingre = ingredientData.find(
+  //   (ingre) => ingre.ingredient_row_id === variety
+  // );
+  useEffect(() => {
+    if (ingredientData) {
+      setIngre(
+        ingredientData.find((ingre) => ingre.ingredient_row_id === variety)
+      );
+    }
+  }, [variety]);
 
   const incrementQuantityHandler = () => {
     setQuantity((prev) => prev + 1);
@@ -96,7 +104,9 @@ const CreateFormula = ({ categoryData, ingredientData }) => {
   };
 
   const varietyChangeHandler = (value) => () => {
-    setVariety(value);
+    if (value !== variety) {
+      setVariety(value);
+    }
   };
 
   // console.log(ingredientData.find((ingre = variety === ingre)));
