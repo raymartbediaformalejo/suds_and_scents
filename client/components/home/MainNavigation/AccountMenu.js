@@ -1,4 +1,5 @@
 // import * as React from "react";
+import Image from "next/image";
 import { Fragment, useState } from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
@@ -7,6 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import { Button } from "@mui/material";
+import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 
 import classes from "../../../styles/layout/AccountMenu.module.css";
 import Link from "next/link";
@@ -16,7 +18,7 @@ const AccountMenu = ({ styleMode, userSession }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   if (userSession) {
-    console.log(userSession?.data?.user.image);
+    console.log(typeof userSession?.data?.user.image);
   }
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -42,7 +44,7 @@ const AccountMenu = ({ styleMode, userSession }) => {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar
+            {/* <Avatar
               classes={{
                 root: `${
                   styleMode === "light"
@@ -52,14 +54,20 @@ const AccountMenu = ({ styleMode, userSession }) => {
               }}
               sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
               src={userSession?.data?.user.image}
-            />
-            {/* {userSession && userSession.status === "authenticated" ? (
+              alt={userSession?.data?.user.image}
+            /> */}
+            {userSession && userSession.status === "authenticated" ? (
               <Avatar
                 sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
-                src={userSession?.data?.user.image}
-              />
+              >
+                <Image
+                  src={userSession.data.user.image}
+                  width="28"
+                  height="28"
+                  alt={userSession.data.user.name}
+                />
+              </Avatar>
             ) : (
-              
               <Avatar
                 sx={{ width: 28, height: 28, backgroundColor: "transparent" }}
               >
@@ -73,7 +81,7 @@ const AccountMenu = ({ styleMode, userSession }) => {
                   }}
                 />
               </Avatar>
-            )} */}
+            )}
           </IconButton>
         </Tooltip>
       </Box>

@@ -17,18 +17,16 @@ NPM / Yarn and Node.js installed
 
 Execute these commands from the project directory
 
-## Start API
+## Start Client
+
+1. `cd client`
+2. `npm install --save --force`
+3. `npm run dev`
+
+## Start Server
 
 1. `cd server`
 2. `npm install`
 3. `npm start`
-
-## Start Client
-
-1. `cd client`
-2. `npm install`
-3. `npm install @mui/styles --save --force`
-4. `npx prisma migrate dev`
-5. `npm run dev`
 
 Access the web app at http://localhost:3000/
