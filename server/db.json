@@ -14,7 +14,9 @@
           "variety_id": "custom-perfume-oil-base",
           "variety_value": "Oil-based"
         },
-        { "variety_id": "custom-perfume-floral", "variety_value": "Floral" }
+        { "variety_id": "custom-perfume-floral", 
+          "variety_value": "Floral"
+        }
       ]
     },
     {
@@ -31,7 +33,9 @@
           "variety_id": "custom-body-lotion-flip-top",
           "variety_value": "Flip Top"
         },
-        { "variety_id": "custom-body-lotion-pump", "variety_value": "Pump" }
+        { "variety_id": "custom-body-lotion-pump", 
+          "variety_value": "Pump" 
+        }
       ]
     },
     {
@@ -124,8 +128,8 @@
               "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/coconut_tvgixg.png"
             },
             {
-              "option_id": "grape-seed",
-              "option_name": "Grape-seed",
+              "option_id": "grapeseed",
+              "option_name": "Grapeseed",
               "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/v1681367930/grape-seed_tf8dii.png"
             },
             {
@@ -174,8 +178,8 @@
               "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,h_50,w_50/v1681368950/Bergamot_ibgkr3.jpg"
             },
             {
-              "option_id": "sandal-wood",
-              "option_name": "Sandal-wood",
+              "option_id": "sandalwood",
+              "option_name": "Sandalwood",
               "option_image": "https://res.cloudinary.com/dkppw65bv/image/upload/c_fill,g_xy_center,h_50,w_50,x_372/v1681368950/Sandal-wood_swvcge.jpg"
             },
             {
@@ -556,7 +560,7 @@
       "ingredient_row_id": "custom-body-scrub-4-oz",
       "ingredient_row_items": [
         {
-          "ingredient_row_name": "1st Scents",
+          "ingredient_row_name": "1st Scent",
           "options": [
             {
               "option_id": "fir-forest",
@@ -586,7 +590,7 @@
           ]
         },
         {
-          "ingredient_row_name": "2nd Scents",
+          "ingredient_row_name": "2nd Scent",
           "options": [
             {
               "option_id": "fresh-flora",
@@ -616,7 +620,7 @@
           ]
         },
         {
-          "ingredient_row_name": "3rd Scents",
+          "ingredient_row_name": "3rd Scent",
           "options": [
             {
               "option_id": "rose",
@@ -651,7 +655,7 @@
       "ingredient_row_id": "custom-body-scrub-8-oz",
       "ingredient_row_items": [
         {
-          "ingredient_row_name": "1st Scents",
+          "ingredient_row_name": "1st Scent",
           "options": [
             {
               "option_id": "fir-forest",
@@ -681,7 +685,7 @@
           ]
         },
         {
-          "ingredient_row_name": "2nd Scents",
+          "ingredient_row_name": "2nd Scent",
           "options": [
             {
               "option_id": "fresh-flora",
@@ -711,7 +715,7 @@
           ]
         },
         {
-          "ingredient_row_name": "3rd Scents",
+          "ingredient_row_name": "3rd Scent",
           "options": [
             {
               "option_id": "rose",
